@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/../Demo2_04191315/src/main/webapp/index.html" value="file://$PROJECT_DIR$/../Demo2_04191315/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/../StoreProject/src/main/webapp/pages/user/login.jsp" value="file://$PROJECT_DIR$/../StoreProject/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/../StoreProject/src/main/webapp/pages/user/register.jsp" value="file://$PROJECT_DIR$/../StoreProject/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/../store/src/main/webapp/pages/client/index.jsp" value="file://$PROJECT_DIR$/../store/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/../store/src/main/webapp/pages/user/login.jsp" value="file://$PROJECT_DIR$/../store/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/../store/src/main/webapp/pages/user/register.jsp" value="file://$PROJECT_DIR$/../store/src/main/webapp" />
+        <entry key="mock:///beautify.js" value="file://$PROJECT_DIR$/../ex04_04191315/src/main/webapp" />
+      </map>
+    </option>
+  </component>
+</project>

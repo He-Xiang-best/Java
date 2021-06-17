@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <script type="text/javascript" src="js/prompt.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+<style>@-webkit-keyframes hideAnimation2{0% { opacity:0.618;} 100% {opacity:0;}}@keyframes hideAnimation{0% { opacity:0.618;} 100% {opacity:0;}}.noobox-hide{-webkit-animation:hideAnimation2 ease-in 0.333s forwards;animation:hideAnimation ease-in 0.333s forwards;}#NooBox-Video-Indicator-Icon{margin-top:-25px;height:30px;margin-bottom:-5px}#NooBox-Video-Indicator{pointer-events:none;display:none;height:100px;width:100px;position:absolute;text-align:center;font-size:23px;line-height:100px;opacity:0.618;background-color:rgb(43,54,125);color:white;z-index:99999999999999;margin:0;padding:0;border:0}</style></head>
+<body>
+  <div id="header">
+        <div class="header_center">04191315_何翔_实验2_表单验证</div>
+    </div>
+
+    <div id="body_centent">
+<form action="login.html" method="post" id="demo" autocomplete="off" novalidate="novalidate">
+    <p>
+        <span class="tip">用户名：</span>
+        <input type="text" name="username" style="background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+	<span class="shuoming">（只能为英文字母+数字）</span>
+	</p>
+    <p class="prompot"><i class="verJsFont icon-info-o"></i></p>
+    <p>
+        <span class="tip">密码：</span>
+        <input type="password" name="password" id="password" style=" background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+    <span class="shuoming">（8位以上，包括大小写，特殊字符）</span>
+	</p>
+    <p class="prompot"><i class="verJsFont icon-info-o"></i></p>
+    <p>
+        <span class="tip">确认密码：</span>
+        <input type="password" name="password2" style=" background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+    <span class="shuoming">（8位以上，包括大小写，特殊字符）</span>
+	</p>
+    <p class="prompot"><i class="verJsFont icon-info-o"></i></p>
+    <p>
+        <span class="tip">手机号码：</span>
+        <input type="text" name="tel" class="tel">
+    <span class="shuoming">（11位数字）</span>
+	</p>
+    <p class="prompot"><i class="verJsFont icon-info-o"></i></p>
+	
+		<p>
+            <span class="tip">邮箱：</span>
+        <input type="text" name="email" class="email">
+    <span class="shuoming">（只能为@qq或者@jluzh.edu.cn）</span>
+	</p>
+    <p>
+        <span class="tip">性别：</span>
+        <input type="radio" name="sex" vlaue="1"><span class="radioSpan">男</span>
+        <input type="radio" name="sex" vlaue="2"><span class="radioSpan">女</span>
+    <span class="shuoming">（*必填信息）</span>
+	</p>
+    <p class="prompot"><i class="verJsFont icon-info-o"></i></p>
+    <p>
+        <span class="tip">爱好：</span>
+        <input type="checkbox" name="favorite" value="1"><span class="checkboxSpan">唱歌</span>
+        <input type="checkbox" name="favorite" value="2"><span class="checkboxSpan">跳舞</span>
+        <input type="checkbox" name="favorite" value="3"><span class="checkboxSpan">游泳</span>
+        <input type="checkbox" name="favorite" value="4"><span class="checkboxSpan">画画</span>
+    <span class="shuoming">（至少选择两个）</span>
+	</p>
+    <p class="prompot"><i class="verJsFont icon-info-o"></i></p>
+	<p>
+            <span class="tip">请选择学院：</span>
+            <select name="college" >
+                <option value="计算机学院">计算机学院</option>
+                <option value="工商管理学院">工商管理学院</option>
+                <option value="旅游学院">旅游学院</option>
+            </select>
+
+                <span>&nbsp 请选择专业：</span>
+                <select name="college" >
+                    <option value="软件工程专业">软件工程专业</option>
+                    <option value="酒店管理专业">酒店管理专业</option>
+                    <option value="经济管理专业">经济管理专业</option>
+            </select>
+        <span class="shuoming">（请根据实际情况选择）</span>
+		</p>
+    <button>确认</button>
+	<a href="#" class="help">忘记密码</a>
+    <a href="#" class="help">现在注册</a>
+	
+</form>
+  </div>
+<canvas id="NooBox-VideoBeyond-preCanvas" style="display: none"></canvas><div id="NooBox-Video-Indicator"></div></body><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script></html>

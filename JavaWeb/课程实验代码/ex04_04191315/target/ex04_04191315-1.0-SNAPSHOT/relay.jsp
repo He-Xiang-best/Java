@@ -1,0 +1,108 @@
+<%@ page import="java.io.IOException" %>
+<%@ page import="ex04.Student" %><%--
+  Created by IntelliJ IDEA.
+  User: 17283
+  Date: 2021/3/25
+  Time: 1:17
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%
+    Student stu = (Student) request.getAttribute("stu");
+%>
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登入成功页面</title>
+
+    <link rel="stylesheet" type="text/css" href="css/relay.css">
+
+</head>
+<body>
+<div class="header">
+
+</div>
+
+<div class="rg_layout">
+
+    <div class="rg_left">
+        <p>登入成功</p>
+        <p>Welcome!</p>
+    </div>
+
+    <div class="rg_center">
+
+        <div class="rg_form">
+
+            <!--定义表单 form-->
+            <form action="/test04/index.jsp" id="form" method="get">
+                <table>
+                    <tr>
+                        <td class="td_left"><label >学号:</label></td>
+                        <td class="td_right">
+                            <label>
+                                <%
+                                out.print(stu.getS_id());
+                                %>
+
+                            </label>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label >姓名:</label></td>
+                        <td class="td_right">
+                            <label>
+                                <%
+                                    out.print(stu.getS_name());
+                                %>
+
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label >学院:</label></td>
+                        <td class="td_right">
+                            <label>
+                                <%
+                                    out.print(stu.getAcademy());
+                                %>
+
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label>专业:</label></td>
+                        <td class="td_right">
+                            <label>
+                                <%
+                                    out.print(stu.getSpecialize_course());
+                                %>
+
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"  id="td_sub"><input type="submit" id="btn_sub" value="返回主页"></td>
+                    </tr>
+                </table>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+
+</html>

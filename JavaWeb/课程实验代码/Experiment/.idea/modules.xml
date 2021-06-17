@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../JDBC/JDBC.iml" filepath="$PROJECT_DIR$/../JDBC/JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ex01_04191315/ex01_04191315.iml" filepath="$PROJECT_DIR$/../ex01_04191315/ex01_04191315.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ex02_04191315/ex02_04191315.iml" filepath="$PROJECT_DIR$/../ex02_04191315/ex02_04191315.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ex03_04191315/ex03_04191315.iml" filepath="$PROJECT_DIR$/../ex03_04191315/ex03_04191315.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ex04_04191315/ex04_04191315.iml" filepath="$PROJECT_DIR$/../ex04_04191315/ex04_04191315.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ex05_04191315/ex05_04191315.iml" filepath="$PROJECT_DIR$/../ex05_04191315/ex05_04191315.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ex06_04191315/ex06_04191315.iml" filepath="$PROJECT_DIR$/../ex06_04191315/ex06_04191315.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ex07_04191315/ex07_04191315.iml" filepath="$PROJECT_DIR$/../ex07_04191315/ex07_04191315.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../store/store.iml" filepath="$PROJECT_DIR$/../store/store.iml" />
+    </modules>
+  </component>
+</project>

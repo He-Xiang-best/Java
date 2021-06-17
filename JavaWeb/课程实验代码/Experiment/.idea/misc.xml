@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../ex01_04191315" />
+    <file type="web" url="file://$PROJECT_DIR$/../ex02_04191315" />
+    <file type="web" url="file://$PROJECT_DIR$/../ex03_04191315" />
+    <file type="web" url="file://$PROJECT_DIR$/../ex04_04191315" />
+    <file type="web" url="file://$PROJECT_DIR$/../ex05_04191315" />
+    <file type="web" url="file://$PROJECT_DIR$/../ex06_04191315" />
+    <file type="web" url="file://$PROJECT_DIR$/../ex07_04191315" />
+    <file type="web" url="file://$PROJECT_DIR$/../JDBC" />
+    <file type="web" url="file://$PROJECT_DIR$/../MyStore" />
+    <file type="web" url="file://$PROJECT_DIR$/../store" />
+    <file type="web" url="file://$PROJECT_DIR$/../StoreProject" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../Webtest_04191315/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo2_04191315/pom.xml" />
+        <option value="$PROJECT_DIR$/../ex03_04191315/pom.xml" />
+        <option value="$PROJECT_DIR$/../ex01_04191315/pom.xml" />
+        <option value="$PROJECT_DIR$/../ex02_04191315/pom.xml" />
+        <option value="$PROJECT_DIR$/../ex04_04191315/pom.xml" />
+        <option value="$PROJECT_DIR$/../MyStore/pom.xml" />
+        <option value="$PROJECT_DIR$/../ex05_04191315/pom.xml" />
+        <option value="$PROJECT_DIR$/../ex06_04191315/pom.xml" />
+        <option value="$PROJECT_DIR$/../store/pom.xml" />
+        <option value="$PROJECT_DIR$/../ex07_04191315/pom.xml" />
+        <option value="$PROJECT_DIR$/../JDBC/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

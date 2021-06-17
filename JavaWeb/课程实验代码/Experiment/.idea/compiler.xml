@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ex02_04191315" />
+        <module name="ex04_04191315" />
+        <module name="ex06_04191315" />
+        <module name="ex03_04191315" />
+        <module name="JDBC" />
+        <module name="store" />
+        <module name="ex01_04191315" />
+        <module name="ex07_04191315" />
+        <module name="ex05_04191315" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="ex01_04191315" target="1.8" />
+      <module name="ex02_04191315" target="1.8" />
+      <module name="ex03_04191315" target="1.8" />
+      <module name="ex04_04191315" target="1.8" />
+      <module name="ex05_04191315" target="1.8" />
+      <module name="ex06_04191315" target="1.8" />
+      <module name="ex07_04191315" target="1.8" />
+      <module name="JDBC" target="1.8" />
+      <module name="mystore" target="1.8" />
+      <module name="store" target="1.8" />
+      <module name="StorePreoject" target="1.8" />
+      <module name="StoreProject" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+  </component>
+</project>
