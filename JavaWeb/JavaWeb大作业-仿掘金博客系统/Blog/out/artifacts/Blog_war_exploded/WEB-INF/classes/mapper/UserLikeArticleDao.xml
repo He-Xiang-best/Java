@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.blog.dao.UserLikeArticleDao">
+
+
+    <insert id="add">
+        insert into user_likear (userid, likearid) values
+            (#{userid},#{likearid})
+    </insert>
+
+    <update id="update"></update>
+    <delete id="delete">
+        delete from user_likear
+        <where>
+            <if test="userid!=null">
+                userid=#{userid}
+            </if>
+            <if test="likearid!=null">
+               and likearid=#{likearid}
+            </if>
+        </where>
+    </delete>
+    <select id="selectOneObj" resultType="com.blog.entity.UserArticle">
+        select * from user_likear where userid=#{userid} and likearid=#{likearid}
+    </select>
+    <select id="selectAll" resultType="com.blog.entity.UserArticle">
+        select * from user_likear
+    </select>
+    <select id="selectByLike" resultType="java.lang.Integer">
+        select user_likear.likearid from user_likear where userid=#{userid}
+    </select>
+</mapper>

@@ -1,0 +1,36 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="JavaDoc" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="TOP_LEVEL_CLASS_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="INNER_CLASS_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="METHOD_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+        </value>
+      </option>
+      <option name="FIELD_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="IGNORE_DEPRECATED" value="false" />
+      <option name="IGNORE_JAVADOC_PERIOD" value="true" />
+      <option name="IGNORE_DUPLICATED_THROWS" value="false" />
+      <option name="IGNORE_POINT_TO_ITSELF" value="false" />
+      <option name="myAdditionalJavadocTags" value="ClassName:,describe:后台文章控制器,Description:,Title:,describe:后台分类控制器,describe:后台评论控制类,author:,date:,describe:后台控制台控制器,Description:跳转到控制台界面,Description:后台搜索页面,describe:后台修改前台页面控制器,describe:后台标签控制器,Description:跳转到修改密码页面,describe:后台用户控制器,Description:删除访问,describe:跳转关于页面控制器,describe:,describe:文章控制器,describe:分类控制器,describe:评论控制器,describe:登陆控制类,describe:标签控制器,describe:页面实体类,describe:标签实体,describe:解析文章所拥有得标签,describe:用于统计访问量监听器,describe:监听器，用于启动服务器时显示主页得信息,describe:luncene索引,describe:Shiro自定义Realm,describe:解析工具,Description:解析标签,Description:解析文章简介,describe:进行传输数据到前台,Description:判断是否部位空,Description:格式化模糊查询,describe:上传图片工具,describe:分页实体" />
+    </inspection_tool>
+  </profile>
+</component>

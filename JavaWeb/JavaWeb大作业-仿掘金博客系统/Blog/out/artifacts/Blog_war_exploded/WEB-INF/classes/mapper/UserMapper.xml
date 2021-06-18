@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.blog.dao.UserDao" >
+     <resultMap id="UserResultMap" type="User" >
+    <id column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="user_pass" property="userPass" jdbcType="VARCHAR" />
+    <result column="user_nickname" property="userNickname" jdbcType="VARCHAR" />
+    <result column="user_email" property="userEmail" jdbcType="VARCHAR" />
+    <result column="page_nickname" property="pageNickname" jdbcType="VARCHAR" />
+    <result column="user_signature" property="userSignature" jdbcType="VARCHAR" />
+    <result column="avatar_path" property="avatarPath" jdbcType="VARCHAR" />
+    <result column="markdown_profile" property="markdownProfile" jdbcType="LONGVARCHAR" />
+    <result column="html_profile" property="htmlProfile" jdbcType="LONGVARCHAR" />
+    <result column="person_tag" property="personTag" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <insert id="addUser">
+        insert into user (user_name, user_pass, user_email) values (#{user_name},#{user_pass},#{user_email})
+    </insert>
+    <delete id="delete">
+        delete from user where user_id=#{userid}
+    </delete>
+
+
+    <!--   	获取用户根据Id -->
+	<select id="getUser" parameterType="java.lang.Integer" resultMap="UserResultMap">
+		select
+		       user_id,user_name,user_pass,user_nickname,user_email,page_nickname,user_signature,avatar_path,markdown_profile,html_profile,person_tag
+		from user
+		where user_id=#{userId}
+	</select>
+	
+<!-- 	根据用户信息获取用户 -->
+		<select id="getUserByUsername" parameterType="java.lang.String" resultMap="UserResultMap">
+		select
+            user_id,user_name,user_pass,user_nickname,user_email,page_nickname,user_signature,avatar_path,markdown_profile,html_profile,person_tag
+		from user
+		where user_name=#{userName}
+	</select>
+
+
+    <select id="getUserByUserInfo" resultMap="UserResultMap">
+        select *
+        from user
+        <where>
+            <if test="user_email!=null">
+                user_email=#{user_email}
+            </if>
+
+        </where>
+
+    </select>
+
+    <select id="getAllUser" resultMap="UserResultMap">
+        select * from user
+    </select>
+
+    <select id="getAllUserByLike" resultMap="UserResultMap">
+        select *
+        from user where user_name like concat('%',#{searchKey},'%')
+    </select>
+
+    <!-- 	修改用户信息 -->
+	<update id="updateUser" parameterType="User">
+	update
+        user
+        <set>
+            <if test="userName != null">user_name = #{userName,jdbcType=VARCHAR},</if>
+            <if test="userPass != null">user_pass = #{userPass,jdbcType=VARCHAR},</if>
+             <if test="userNickname != null">user_nickname = #{userNickname,jdbcType=INTEGER},</if>
+            <if test="userEmail != null">user_email = #{userEmail,jdbcType=VARCHAR},</if>
+             <if test="pageNickname != null">page_nickname = #{pageNickname,jdbcType=VARCHAR},</if>
+             <if test="userSignature != null">user_signature = #{userSignature,jdbcType=VARCHAR},</if>
+            <if test="avatarPath != null">avatar_path = #{avatarPath,jdbcType=VARCHAR},</if>
+             <if test="markdownProfile != null">markdown_profile = #{markdownProfile},</if>
+              <if test="htmlProfile != null">html_profile = #{htmlProfile},</if>
+            <if test="personTag != null">person_tag = #{personTag,jdbcType=VARCHAR},</if>
+        </set>
+        where user_id = #{userId,jdbcType=INTEGER}
+	</update>
+</mapper>

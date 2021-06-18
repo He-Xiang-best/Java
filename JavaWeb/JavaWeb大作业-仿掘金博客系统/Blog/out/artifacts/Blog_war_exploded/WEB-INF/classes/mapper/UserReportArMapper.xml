@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.blog.dao.UserReportArDao">
+
+
+    <insert id="add">
+        insert into user_report (userid, reportarid) values
+            (#{userid},#{reportarid})
+    </insert>
+    <update id="update"></update>
+
+    <delete id="delete">
+        delete from user_report where reportarid=#{reportarid}
+    </delete>
+    <select id="selectOneObj" resultType="com.blog.entity.UserReportAr">
+        select * from user_report where userid=#{userid} and reportarid=#{reportarid}
+    </select>
+    <select id="selectAll" resultType="java.lang.Integer">
+        select distinct(reportarid) from user_report
+    </select>
+    <select id="selectByLike" resultType="java.lang.Integer">
+        select reportarid from user_report where userid=#{userid}
+    </select>
+</mapper>

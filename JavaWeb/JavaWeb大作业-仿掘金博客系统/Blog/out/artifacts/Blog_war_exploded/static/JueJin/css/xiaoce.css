@@ -1,0 +1,245 @@
+html{
+    background-color: rgb(244,245,245);
+    font-size: 12px;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+*{
+    list-style: none;
+    box-sizing: border-box;
+}
+.view-nav{
+    width: 100%;
+    height: 3.833rem;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    background-color: rgb(255,255,255);
+    position: fixed;
+    top: 60px;
+    z-index: 5;
+    transition: all .3s;
+}
+.nav-list1{
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+}
+.nav-list1 li{
+    padding-right: 1rem;
+    line-height: 3.833rem;
+    font-size: 1.16rem;
+    color: #71777c;
+    cursor: pointer;
+}
+.nav-list1 .active1{
+    color: #007fff;
+}
+.nav-list1 li:hover{
+    color: #007fff;
+}
+.list-wrap{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 6.5rem;
+}
+.books-list{
+    max-width: 700px;
+    box-shadow: 0 1px 3px 0 rgba(4,5,13,.23);
+    margin-bottom: 50px;
+    display: none;
+    margin-right: 25px;
+}
+.active2{
+    display: block;
+}
+.books-list a{
+    display: flex;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.books-list a:hover{
+    background-color: rgb(247,249,249);
+}
+.books-list a:not(:last-child){
+    border-bottom: 1px solid #e6e8e8;
+}
+.books-list a .big{
+    width: 100px;
+    height: 140px;
+    box-shadow: 3px 4px 12px 0 rgba(0,0,0,.2);
+    overflow: hidden;
+    background-color: #ccc;
+}
+.books-list a .info{
+    width: 528px;
+    padding-left: 22px;
+    font-size: 14px;
+    color: #2e3135;
+}
+.info .title{
+    font-size: 20px;
+    font-weight: 400;
+}
+.info .title:hover{
+    color: #007fff;
+}
+.info .desc{
+    margin-top: 5px;
+    color: #71777c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.info .author{
+    display: flex;
+    text-align: center;
+    margin-top: 6px;
+}
+.author .author-info{
+    display: flex;
+    align-items: center;
+}
+.author .user{
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+}
+.author .user .san{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+.author-info .rank{
+    margin-left: 0.33rem;
+    position: relative;
+    top: 2px;
+}
+.author-desc{
+    display: flex;
+    align-items: center;
+    color: #71777c;
+}
+.selfDescription{
+    margin: 0 10px;
+}
+.info .other{
+    margin-top: 6px;
+    display: flex;
+}
+.other .price{
+    color: #ed7b11;
+    font-size: 18px;
+    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+}
+.other .messages{
+    display: flex;
+    align-items: center;
+    color: #71777c;
+}
+.messages .message:not(:last-child)::after{
+    content: "·";
+    color: rgb(113, 119, 124);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.copy-right{
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #3a4e64;
+    margin-bottom: 40px;
+    display: flex;
+}
+.copy-right .footer{
+    width: 100%;
+    text-align: center;
+}
+
+.sticky-section{
+    width: 240px;
+    position: fixed;
+    right: 300px;
+}
+.sticky-section .section{
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 0 rgba(4,5,13,.23);
+    background-color: #fff;
+}
+.section .slogan{
+    padding: 15px 16px;
+    border-bottom: 1px solid #e6e8e8;
+}
+.slogan .title{
+    font-size: 15px;
+    color: #000;
+}
+.slogan .desc{
+    margin-top: 8px;
+    font-size: 14px;
+    color: #646464;
+}
+.wechat-qr{
+    padding: 12px 16px;
+}
+.wechat-qr .title{
+    font-size: 15px;
+}
+.wechat-qr .pr-img{
+    margin-top: 9px;
+    height: 95px;
+    background: url('../imgs/wechat-qr.f1926e7.png');
+    background-size: contain;
+}
+.sticky-section .help{
+    margin-top: 10px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(4,5,13,.23);
+}
+.help a:hover{
+    background-color: rgb(247,249,249);
+}
+.help a{
+    position: relative;
+    color: #71777b;
+    text-align: center;
+    height: 100%;
+    flex-grow: 1;
+}
+.help .help-up{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+.help img{
+    width: auto;
+    height: 28px;
+}
+.help a:first-child::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 45px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-right: 1px solid #efefef;
+}
+.help a .title{
+    margin-top: 8px;
+    font-size: 14px;
+}

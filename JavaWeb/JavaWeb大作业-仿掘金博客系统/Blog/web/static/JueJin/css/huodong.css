@@ -1,0 +1,133 @@
+body {
+    background-color: #f4f5f5;
+}
+
+main nav {
+    width: 100px;
+    background-color: #fff;
+}
+
+main .content {
+    margin-top: 67px;
+}
+
+.content .content-top {
+    display: flex;
+}
+
+.content-top .calendar {
+    width: 475px;
+    margin-left: 15px;
+}
+
+.swiper-container {
+    width: 470px;
+    min-width: 320px;
+    height: 280px;
+}
+
+.swiper-container {
+    --swiper-theme-color: #ff6600; /* 设置Swiper风格 */
+    --swiper-navigation-color: #fff; /* 单独设置按钮颜色 */
+    --swiper-navigation-size: 20px; /* 设置按钮大小 */
+    --swiper-pagination-color: #fff; /* 两种都可以 */
+}
+
+.my-bullet {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(50, 50, 50, .1);
+    margin-left: 5px;
+}
+
+.cal-week {
+    background-color: #007fff;
+    color: white;
+    height: 20px !important;
+}
+
+.cal-week .cal-weekend {
+    color: white !important;
+}
+.cal-current .cal-text {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    padding: 4px;
+    background: #007fff;
+    color: white;
+    border-radius: 50%;
+    height: 20px;
+    line-height: 20px;
+}
+.cal-picked.cal-current {
+    background-color: transparent!important;
+}
+.cal-current {
+    background-color: transparent!important;
+}
+.content .event-warp .warp-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.warp-list .warp-item {
+    box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+    width: 23.99999%;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.warp-list .warp-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(0,0,0,.1);
+}
+.warp-item .img {
+    height: 135px;
+}
+.warp-item .message {
+    width: 230px;
+    padding: 20px 10px 15px;
+    background-color: #fff;
+}
+.message .title {
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.message .date {
+    margin-top: 6px;
+    color: #333333;
+}
+.date i {
+    margin-right: 5px;
+    font-size: 15px;
+    color: #4a4a4a;
+}
+.message .join {
+    display: flex;
+    justify-content: space-between;
+    color: #333333;
+    margin-top: 6px;
+
+}
+.message .join .btn-join {
+    width: 100px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: #4d91fd;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}

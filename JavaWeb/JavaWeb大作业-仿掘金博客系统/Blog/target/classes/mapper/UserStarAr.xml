@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.blog.dao.UserStarArticleDao">
+
+
+    <insert id="add">
+        insert into user_starar (userid, starid) values
+            (#{userid},#{starid})
+    </insert>
+    <update id="update"></update>
+    <delete id="delete">
+        delete from user_starar
+        <where>
+            <if test="userid!=null">
+                userid=#{userid}
+            </if>
+            <if test="starid!=null">
+                and starid=#{starid}
+            </if>
+        </where>
+    </delete>
+    <select id="selectOneObj" resultType="com.blog.entity.UserStarAr">
+        select * from user_starar
+        <where>
+            <if test="userid!=null">
+                userid=#{userid}
+            </if>
+            <if test="starid!=null">
+               and starid=#{starid}
+            </if>
+        </where>
+
+    </select>
+    <select id="selectAll" resultType="com.blog.entity.UserStarAr"></select>
+    <select id="selectByLike" resultType="java.lang.Integer">
+        select starid from user_starar where userid=#{userid}
+    </select>
+</mapper>

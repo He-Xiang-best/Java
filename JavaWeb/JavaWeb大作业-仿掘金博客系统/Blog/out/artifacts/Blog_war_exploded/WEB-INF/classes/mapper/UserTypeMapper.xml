@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.blog.dao.UserTypeDao">
+    <insert id="addUserType">
+        insert into user_type(userid) values (#{userid})
+    </insert>
+
+    <update id="update">
+        update user_type set typeid=#{typeid}  where userid = #{userid}
+    </update>
+    <delete id="delete">
+        delete from user_type where userid=#{userid}
+    </delete>
+
+
+    <select id="listUserType" resultType="com.blog.entity.UserType">
+        select * from  user_type where userid = #{userid}
+    </select>
+    <select id="getAllUserType" resultType="com.blog.entity.UserType">
+        select * from  user_type
+    </select>
+    <select id="selectType" resultType="java.lang.Integer">
+        select typeid from  user_type where userid = #{userid}
+    </select>
+</mapper>

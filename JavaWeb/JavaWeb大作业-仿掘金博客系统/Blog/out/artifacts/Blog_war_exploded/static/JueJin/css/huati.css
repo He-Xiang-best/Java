@@ -1,0 +1,63 @@
+html{
+    font-size: 12px;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+}
+.all{
+    max-width: 920px;
+    margin: 0 auto;
+}
+.all .title{
+    padding: 0 1.2rem;
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.topic-item{
+    /* width: 260px;
+    height: 108px; */
+    display: flex;
+    padding: 1.5rem 1.2rem;
+}
+.topic-tu{
+    /* width: 72px;
+    height: 72px; */
+    margin-right: 2%;
+    cursor: pointer;
+}
+.topic-tu img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+}
+.content{
+    color: #8a9aa9;
+    width: 12rem;
+    max-width: 12rem;
+    text-align: left;
+    margin-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.content a{
+    font-weight: 600;
+    color: #2e3135;
+    font-size: 1.4rem;
+}
+.content a:hover{
+    color: rgb(27,140,255);
+}
+.content span{
+    padding-top: 6px;
+    font-size: 1.1rem;
+}
+.guan{
+    color: #37c701;
+    cursor: pointer;
+}
